@@ -72,5 +72,10 @@ public class DeploymentRestServiceImpl implements DeploymentRestService{
 	public List<Employee_Address> getEmployee() {
 		return employeeDAO.getEmployee();
 	}
+	
+	@Override
+	public void deleteEmployee(String empId) {
+		employeeDAO.deleteEmployee(empId);
+	}
 
 }

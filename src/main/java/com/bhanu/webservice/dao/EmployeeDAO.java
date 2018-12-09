@@ -73,5 +73,13 @@ public class EmployeeDAO {
 		}
 		return null;
 	}
+	
+	public void deleteEmployee(String empId){
+		try {
+			employee_AdressRepository.delete(empId);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }

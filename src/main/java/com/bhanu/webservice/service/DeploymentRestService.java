@@ -22,5 +22,7 @@ public interface DeploymentRestService {
 	List<Employee_Address> getEmployee();
 	
 	public void deleteUser(long id) throws Exception;
+	
+	public void deleteEmployee(String empId);
 
 }
